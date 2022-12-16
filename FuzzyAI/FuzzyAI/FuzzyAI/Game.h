@@ -3,6 +3,10 @@
 
 #include <SFML/Graphics.hpp>
 #include <algorithm>
+#include "Player.h"
+#include "Enemy.h"
+#include <iostream>
+#include <string.h>
 
 class Game
 {
@@ -13,6 +17,12 @@ public:
 	void run();
 
 private:
+
+	Player player;
+	Enemy enemy;
+
+	double numOfEnemies;
+	double distance;
 
 	void processEvents();
 	void processKeys(sf::Event t_event);
@@ -26,6 +36,12 @@ private:
 	double FuzzyGrade(double value, double x0, double x1);
 	double FuzzyTriangle(double value, double x0, double x1, double x2);
 
+	void callFuzzy();
+
+	void setText();
+	void setTextValues();
+
+
 	double tiny;
 	double small;
 	double moderate;
@@ -38,6 +54,27 @@ private:
 	double highRisk;
 	double mediumRisk;
 	double lowRisk;
+
+	double deployment;
+
+	sf::Font font;
+
+	sf::Text defuzzText;
+
+	sf::Text tinyText;
+	sf::Text smallText;
+	sf::Text moderateText;
+	sf::Text largeText;
+
+	sf::Text closeText;
+	sf::Text mediumText;
+	sf::Text farText;
+
+	sf::Text lowRiskText;
+	sf::Text mediumRiskText;
+	sf::Text highRiskText;
+
+	sf::Text deploymentText;
 
 	sf::RenderWindow m_window;
 	bool m_exitGame;

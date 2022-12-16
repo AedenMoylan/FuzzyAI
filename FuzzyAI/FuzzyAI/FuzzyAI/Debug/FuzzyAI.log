@@ -1,4 +1,5 @@
 ﻿  Game.cpp
-  Main.cpp
-  Generating Code...
+C:\Users\Aeden\Desktop\FuzzyAI\FuzzyAI\FuzzyAI\Game.cpp(15,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Aeden\Desktop\FuzzyAI\FuzzyAI\FuzzyAI\Game.cpp(227,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Aeden\Desktop\FuzzyAI\FuzzyAI\FuzzyAI\Game.cpp(227,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   FuzzyAI.vcxproj -> C:\Users\Aeden\Desktop\FuzzyAI\FuzzyAI\Debug\FuzzyAI.exe
